@@ -1,0 +1,604 @@
+
+<!--
+
+_________________________#################@
+____________________##########################
+________________#################################
+____________########################################
+__________############################__##############
+________############################______###############
+________###########################_________################
+______##############################______###################
+_____################################__##################*
+____##################################################*
+____##############################################*
+___###########################################*
+__#######################################*
+__####################################*
+__################################*
+__################################*
+__#####################################
+__*#######################################=
+__############################################=
+___*##############################################=
+____##################################################=
+_____#####################################################=
+______#####################################################
+________##################################################
+_________###############################################*
+___________###########################################*
+_____________#######################################*
+_________________##################################
+___________________###########################*
+________________________#################*
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--
+		<base href="http://wewantgames.de/">
+		-->
+		<title>Magazin | wewantgames.de - Games und Gamedev</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Games und Gamedev - Ein Onlinemagazin über Spiele und Spieleentwicklung.">
+		<meta name="keywords" content="games, development, computer, magazine, spiele, online">
+		<meta name="author" content="Carsten">
+		
+		<meta property="og:image"content="http://wewantgames.de/jpg" />
+		<link rel="image_src" href="http://wewantgames.de/jpg" />
+
+		<link rel="shortcut icon" href="http://wewantgames.de/favicon.ico" type="image/x-icon">
+		
+		<!-- jQuery JS -->
+		<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Sharre JS -->
+		<script src="assets/js/sharrre.min.js" type="text/javascript"></script>
+
+		<!-- Slides JS -->
+		<script src="assets/js/slides.min.js" type="text/javascript"></script>
+
+		<!-- Apprise -->
+		<script type="text/javascript" src="http://wewantgames.de/assets/js/apprise/apprise-1.5.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://wewantgames.de/assets/js/apprise/apprise.min.css" media="screen" />
+
+		<!-- oswald font CSS -->
+		<link href="assets/oswald/stylesheet.css" rel="stylesheet">
+
+		<!-- FancyBox -->
+		<link rel="stylesheet" href="http://wewantgames.de/assets/js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://wewantgames.de/assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
+
+		<!-- own CSS -->
+		<link href="assets/css/styles.css" rel="stylesheet">
+
+		<!-- own JS -->
+		<script src="assets/js/scripts.js" type="text/javascript"></script>
+
+
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!--[if IE]>
+			<link href="assets/css/styles_ie.css" rel="stylesheet">
+		<![endif]-->
+
+
+					<link rel="alternate" type="application/rss+xml" title="RSS" href="http://wewantgames.de/site/rss/magazin" />
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33758548-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>		
+		
+	</head>
+	<body>
+
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '444939098872666', // App ID
+		      channelUrl : '//wewantgames.de/channel.html', // Channel File
+		      status     : true, // check login status
+		      cookie     : true, // enable cookies to allow the server to access the session
+		      xfbml      : true  // parse XFBML
+		    });
+
+		    // Additional initialization code here
+		  };
+
+		  // Load the SDK Asynchronously
+		  (function(d){
+		     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement('script'); js.id = id; js.async = true;
+		     js.src = "//connect.facebook.net/de_DE/all.js";
+		     ref.parentNode.insertBefore(js, ref);
+		   }(document));
+		</script>
+		
+		<div id="header">
+			<div id="logo">
+				<a href="http://wewantgames.de/">
+					<img src="assets/img/logo.png" alt="WeWantGames.de Logo" />
+				</a>
+			</div>
+
+			<div id="social_icons">
+				<a href="hhttps://plus.google.com/u/0/104703388596207966552/posts" target="_blank"><img src="assets/img/icon_gplus.jpg" title="WeWantGames auf google+" alt="Google+"/></a>
+				<a href="http://youtube.com/wwgmag" target="_blank"><img src="assets/img/icon_youtube.png" title="WeWantGames auf YouTube" alt="YouTube"/></a>
+				<a href="http://facebook.com/wewantgames" target="_blank"><img src="assets/img/icon_facebook.png" title="WeWantGames auf Facebook" alt="Facebook" /></a>
+				<a href="http://twitter.com/wewantgames" target="_blank"><img src="assets/img/icon_twitter.png" title="WeWantGames auf Twitter" alt="Twitter" /></a>
+			</div>
+
+			<div class="terminator"></div>
+
+			<div id="menu">
+				<div class="level1">
+			<span class="active">Magazin</span>
+	</div>
+
+
+<div class="level1">
+			<a href="http://wewantgames.de/infos">Infos</a>
+	</div>
+
+<div class="terminator"></div>			</div>
+		</div>
+		
+		<div id="root">
+							<h2 style="margin-bottom: 10px">Top artikel</h2>
+				<div id="featured">
+					<div id="slides">
+	<div class="slides_container">
+		
+			<div>
+				<a href="artikel/evoland_-_von_1d_bis_3d">
+					<img src="assets/uploads/games/evoland/evoland_big_01.jpg" alt="Evoland - von 1D bis 3D" width="960" />
+				</a>
+				<a href="artikel/evoland_-_von_1d_bis_3d">
+					<div class="caption">
+						<h2>Evoland - von 1D bis 3D</h2>
+						<div>Das Genre von Evoland lässt sich nicht ganz genau definieren, aber ich würde mal sagen, dass es sich um ein Adventure handelt. Allerdings mit einem ganz besonderem Clou.</div>
+					</div>
+				</a>
+			</div>
+
+		
+			<div>
+				<a href="artikel/test_-_bioshock_infinite">
+					<img src="assets/uploads/games/bioshock_infinite/bioshock_infinite_big_01.jpg" alt="Test - Bioshock Infinite" width="960" />
+				</a>
+				<a href="artikel/test_-_bioshock_infinite">
+					<div class="caption">
+						<h2>Test - Bioshock Infinite</h2>
+						<div>Nach ein paar Stunden Bioshock Infinite wage ich mich nun an ein erstes Fazit. Außerdem gibt es zu dem Spiel jetzt auch ein Let's Play von mir. </div>
+					</div>
+				</a>
+			</div>
+
+			</div>
+
+	<a href="#" class="prev"><img src="assets/img/slider_arrow_left.png" width="20" height="43" alt="Arrow Prev"></a>
+	<a href="#" class="next"><img src="assets/img/slider_arrow_right.png" width="20" height="43" alt="Arrow Next"></a>
+</div>				</div>
+						
+			<div id="main">
+				
+	<div id="magazine_teaser" 
+		 		 style="margin-top:		0px;
+		 		margin-bottom: 	0px;">
+		<div class="teaser_container">
+		
+		<div class="news_teaser" onclick="window.location.href='artikel/death_inc_ist_nicht_tot'">
+							<div class="teaser_image">
+					<img src="assets/uploads/games/death_inc_small_01.jpg" alt="Death Inc ist nicht tot" />
+				</div>
+			
+							<h2>Death Inc ist nicht tot</h2>
+				
+				<div class="teaser_text">
+					Trotz fehlgeschlagener Kickstarter-Kampagne wird Death Inc entwickelt. Eine Alphaversion kann man sich jetzt für $10 kaufen. Oder $5000, wenn man möchte.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								12.04.2013 14:39 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/perspective_-_strafft_eure_gehirne'">
+							<div class="teaser_image">
+					<img src="assets/uploads/games/perspective_small_01.jpg" alt="Perspective - strafft eure Gehirne" />
+				</div>
+			
+							<h2>Perspective - strafft eure Gehirne</h2>
+				
+				<div class="teaser_text">
+					Seit Portal sprießen Puzzle-Plattformer ja wie Pilze aus dem Boden. Immer mal wieder ist auch ein interessanter Hirnwindungsverknoter dabei. Antichamber zum Beispiel. Perspective ist auch so ein Ding, dass die Dimensionen auf den Kopf stellt.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								04.04.2013 21:53 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/yay_erster_trailer_zu_thief'">
+							<div class="teaser_image">
+					<img src="assets/uploads/games/thief_4_small_01.jpg" alt="Yay! Erster Trailer zu Thief" />
+				</div>
+			
+							<h2>Yay! Erster Trailer zu Thief</h2>
+				
+				<div class="teaser_text">
+					Lange hat es von den ersten geleakten Screenshots zum Trailer ja nicht gedauert. Und eigentlich wird auch nur bestätigt, was man schon sehen konnte. Aber trotzdem ist hier der Trailer.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								02.04.2013 09:37 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/erster_trailer_zu_broken_age'">
+							<div class="teaser_image">
+					<img src="assets/uploads/games/broken_age_small_01.jpg" alt="Erster Trailer zu Broken Age" />
+				</div>
+			
+							<h2>Erster Trailer zu Broken Age</h2>
+				
+				<div class="teaser_text">
+					Double Fine (ihr wisst schon, The Cave, Psychonauts) hat endlich einen ersten Trailer zum durch Kickstarter finanziertem Adventure 'Broken Age' rausgehauen. Vom eigentlichem Gameplay ist aber noch nichts zu sehen.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								28.03.2013 10:33 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/housing_in_wildstar'">
+							<div class="teaser_image">
+					<img src="assets/uploads/games/WildStar_small_01.jpg" alt="Housing in WildStar" />
+				</div>
+			
+							<h2>Housing in WildStar</h2>
+				
+				<div class="teaser_text">
+					Vor kurzem gab es ja einen Trailer zu WildStar, jetzt gibt es ein interessantes DevLog zum Thema Housing. Allen Anschein nach wird das eigene Heim in dem kommendem MMORPG ein integraler Bestandteil des Spiels.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								27.03.2013 14:58 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/17_minuten_gameplay_zu_battlefield_4'">
+							<div class="teaser_image">
+					<img src="assets/uploads/games/bf_4_small_01.jpg" alt="17 Minuten Gameplay zu Battlefield 4" />
+				</div>
+			
+							<h2>17 Minuten Gameplay zu Battlefield 4</h2>
+				
+				<div class="teaser_text">
+					Drüben bei GameStar gibt es seit grade eben ein Gameplay-Video zu Battlefield 4, das die ersten 17 Minuten der Kampagne zeigt. Meine Meinung dazu gibt es hier.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								27.03.2013 11:40 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/crytek_lsst_die_muskeln_spielen'">
+							<div class="teaser_image">
+					<img src="assets/uploads/images/cry_engine_3_small_01.jpg" alt="Crytek lässt die Muskeln spielen" />
+				</div>
+			
+							<h2>Crytek lässt die Muskeln spielen</h2>
+				
+				<div class="teaser_text">
+					Zur Zeit findet ja die GDC (Games Developer Conference) statt und natürlich werden wieder spektakuläre Trailer gezeigt. Ein erster ist jetzt auf Youtube aufgetaucht. Und zwar von der CryEngine 3.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								26.03.2013 10:24 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/lets_play'">
+							<div class="teaser_image">
+					<img src="assets/uploads/images/lets_play_small_01.jpg" alt="Let's Play" />
+				</div>
+			
+							<h2>Let's Play</h2>
+				
+				<div class="teaser_text">
+					Seit neuestem macht WeWantGames auch in Let's Plays. Immerhin renne ich hier ja jedem Trend hinterher. Wenn auch 5 Jahre zu spät. Macht nichts. Wir fangen mit einem LP zu StarDrive an.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								23.03.2013 11:21 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/neue_physx-effekte_knnten_nerven'">
+							<div class="teaser_image">
+					<img src="assets/uploads/images/apex_small_01.jpg" alt="Neue PhysX-Effekte könnten nerven" />
+				</div>
+			
+							<h2>Neue PhysX-Effekte könnten nerven</h2>
+				
+				<div class="teaser_text">
+					Ein neuartiger Partikeleffekt, der grade mal in zwei Ankündigungstrailern bzw. Techdemos aufgetaucht ist geht mir jetzt schon auf die Nüsse. Hoffentlich nicht zu lange...				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								21.03.2013 10:39 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+		<div class="news_teaser" onclick="window.location.href='artikel/wildstar_trailer_-_fetziges_mmorpg'">
+							<div class="teaser_image">
+					<img src="assets/uploads/games/WildStar_small_01.jpg" alt="WildStar Trailer - fetziges MMORPG" />
+				</div>
+			
+							<h2>WildStar Trailer - fetziges MMORPG</h2>
+				
+				<div class="teaser_text">
+					Donnerstag morgen und die Runde wird mit einem Trailer eröffnet. Diesmal von WildStar, einem MMORPG mit Comic-Look. Und wenn der Humor im Spiel dem im Trailer entspricht wird es ganz lustig.				</div>
+			
+			<div class="infos">
+													<i class="icon icon-film" title="Inklusive Video"></i>
+								21.03.2013 10:23 - 
+				0 Kommentare
+			</div>
+		</div>
+
+	
+	
+		<div class="">
+			<div class="btn-group news_pagination">
+									<a href="http://wewantgames.de/magazin/1" class="btn">1</a>
+									<a href="http://wewantgames.de/magazin/2" class="btn">2</a>
+									<a href="http://wewantgames.de/magazin/3" class="btn">3</a>
+									<a href="http://wewantgames.de/magazin/4" class="btn">4</a>
+									<a href="http://wewantgames.de/magazin/5" class="btn">5</a>
+									<a href="http://wewantgames.de/magazin/6" class="btn">6</a>
+									<a href="http://wewantgames.de/magazin/7" class="btn">7</a>
+									<a href="http://wewantgames.de/magazin/8" class="btn">8</a>
+									<a href="http://wewantgames.de/magazin/9" class="btn">9</a>
+							</div>
+		</div>
+
+		
+
+</div>	</div>
+
+			</div>
+
+			<div id="right">
+				
+	<div  
+		 		 style="margin-top:		0px;
+		 		margin-bottom: 	0px;">
+		<div class="newsletter_submit_form btn-group">
+
+	<h3>Newsletter abonnieren</h3>
+
+	<div class="control-goup" id="cg_email">
+		<input type="text" id="email" name="email" placeholder="eMail Adresse" style="float: left;" />
+		<button type="button" class="btn" title="Senden" onclick="submitMail();"><i class="icon icon-envelope"></i></button>
+	</div>
+
+</div>
+
+
+<script>
+	
+	$('#btn_mail').click(function(){
+		submitMail();
+	})
+
+	$('#email').keyup(function(event){
+		if(event.which == 13 && isEmail($('#email').val()))
+			submitMail();
+	});
+
+	function isEmail(email) 
+	{
+	  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	  return regex.test(email);
+	}
+	
+	function submitMail()
+	{
+		if(isEmail($('#email').val()))
+			$.post('http://wewantgames.de/subscribe', {'email': $('#email').val()}, function(response){
+				apprise(response)
+				$('#email').val('');
+				$('#cg_email').attr('class', 'control-group');
+			});
+		else
+		{
+			apprise('Bitch, please! Das ist doch keine eMail Adresse...');
+			$('#cg_email').attr('class', 'control-group error');
+		}	
+	}
+
+</script>	</div>
+
+
+	<div  
+		 		 style="margin-top:		0px;
+		 		margin-bottom: 	15px;">
+		<div class="latest_comments">
+
+	<h3>Letzte Kommentare</h3>
+
+						<div class="item">
+				<div class="article">
+					<a href="artikel/ingress_-_ein_augmented_reality_spiel_von_google">
+						Ingress - Ein Augmented Reality Spiel von Google					</a>
+				</div>
+				<div class="comment">
+					Ich sehe das mit dem Datenschutz nicht so eng wie&#8230;				</div>
+				<div class="infos">
+					Am 16.11.2012 11:41 von Markus				</div>
+			</div>
+
+					<div class="item">
+				<div class="article">
+					<a href="artikel/ingress_-_ein_augmented_reality_spiel_von_google">
+						Ingress - Ein Augmented Reality Spiel von Google					</a>
+				</div>
+				<div class="comment">
+					Ich bin schon echt gespannt. Kann mir denken, dass es&#8230;				</div>
+				<div class="infos">
+					Am 16.11.2012 11:25 von Carsten				</div>
+			</div>
+
+					<div class="item">
+				<div class="article">
+					<a href="artikel/ingress_-_ein_augmented_reality_spiel_von_google">
+						Ingress - Ein Augmented Reality Spiel von Google					</a>
+				</div>
+				<div class="comment">
+					Nice, habe mich auch mal angemeldet.
+
+Da ich in der&#8230;				</div>
+				<div class="infos">
+					Am 16.11.2012 10:59 von Markus Wiegand				</div>
+			</div>
+
+			
+</div>	</div>
+
+				<h3>Newsticker</h3>
+				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 6,
+				  interval: 30000,
+				  width: 280,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#eeeeee',
+				      color: '#333333'
+				    },
+				    tweets: {
+				      background: '#eeeeee',
+				      color: '#333333',
+				      links: '#666666'
+				    }
+				  },
+				  features: {
+				    scrollbar: false,
+				    loop: false,
+				    live: false,
+				    behavior: 'all'
+				  }
+				}).render().setUser('wewantgames').start();
+				</script>
+			</div>
+
+			<div id="footer">
+				<img src="assets/img/logo.png" alt="WeWantGames" style="width: 150px; margin-bottom: 8px;" /><br />
+WeWantGames versteht sich als Privatprojekt rund um die Themen Computerspiele und Spielentwicklung. Gegründet im Jahr 2012 
+als Plattform, um spieleinteressierte Leser mit Neuigkeiten zu versorgen. Wir sind weder an Werbung, noch die Spieleindustrie
+gebunden und können es uns so erlauben, unabhängig und völlig subjektiv zu berichten. Leider natürlich nicht in dem Umfang, 
+wie etablierte Spielemagazine. <span style="font-style: italic; font-weight: bold;">Fuck it! We'll do it live!</span>
+<hr />
+
+<span class="span4">
+	<strong>Von und mit</strong><br />
+	<a href="http://twitter.com/dacxp" target="_blank">Carsten</a> (fällt unter das LSR)<br />
+	<a href="http://twitter.com/snake989898" target="_blank">Jan</a> (hockt grade in Spanien rum...)<br />
+</span>
+
+<span class="span4">
+	<strong>Gastbeiträge</strong><br />
+	Du hast Lust es auch mal zu probieren?
+	Wir sind immer auf der Suche nach ambitionierten 
+	Leuten, die gerne mal einen Gastbeitrag
+	schreiben möchten. Schreib uns einfach an.
+</span>
+
+<span class="span3" style="text-align: right; margin-left: 45px;">
+	<a href="hhttps://plus.google.com/u/0/104703388596207966552/posts" target="_blank"><img src="assets/img/icon_gplus.jpg" title="WeWantGames auf google+" alt="Google+"/></a>
+	&nbsp;
+	<a href="http://youtube.com/wwgmag" target="_blank"><img src="assets/img/icon_youtube.png" title="WeWantGames auf YouTube" alt="YouTube" /></a>
+	&nbsp;
+	<a href="http://facebook.com/wewantgames" target="_blank"><img src="assets/img/icon_facebook.png" title="WeWantGames auf Facebook" alt="Facebook" /></a>
+	&nbsp; &nbsp;
+	<a href="http://twitter.com/wewantgames" target="_blank"><img src="assets/img/icon_twitter.png" title="WeWantGames auf Twitter" alt="Twitter" /></a>
+	&nbsp; &nbsp;
+	<a href="http://wewantgames.de/site/rss/magazin" target="_blank"><img src="assets/img/icon_rss.png" title="RSS Feed abonnieren" alt="RSS" /></a>
+</span>			</div>
+		</div>
+
+		<div id="ie_warning" onclick="$(this).remove();">
+			<h3>Ein bekannter Fehler wurde entdeckt!</h3>
+			<p>
+				Tut uns leid!<br />
+				Offensichtlich benutzt du den Internet Explorer... Das ist schade.<br />
+				Du kannst dir ja einen echten Browser installieren, wenn du möchtest. <br />
+				Oder komm einfach nicht wieder.<br />
+				<br />
+				Danke!
+			</p>
+		</div>
+
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://wewantgames.de/piwik/" : "http://wewantgames.de/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://wewantgames.de/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->		
+	</body>
+</html>
