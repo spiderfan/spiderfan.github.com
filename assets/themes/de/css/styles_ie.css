@@ -1,0 +1,15 @@
+#ie_warning
+{
+	position: absolute;
+	width: 600px;
+	padding: 15px;
+	background-color: #882222;
+	color: #EEEEEE;
+	top: 50px;
+	left: 50%;
+	margin-left: -315px;
+	z-index: 999;
+	border: 6px solid #EEEEEE;
+	text-align: left;	
+	display: block;!Important
+}

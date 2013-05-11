@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>welcome to spider</title>
+    <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-
+    <meta name="keywords" content="blog, spider, online">
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,60 +15,381 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-     <link href="{{ ASSET_PATH }}/css/spider.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="{{ ASSET_PATH }}/img/favicon.ico" type="image/x-icon">
+    
+    <!-- jQuery JS -->
+    <script src="{{ ASSET_PATH }}/js/jquery.min.js" type="text/javascript"></script>
 
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+    <!-- Bootstrap JS -->
+    <script src="{{ ASSET_PATH }}/js/bootstrap.min.js" type="text/javascript"></script>
 
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <!-- Bootstrap CSS -->
+    <link href="{{ ASSET_PATH }}/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Sharre JS -->
+    <script src="{{ ASSET_PATH }}/js/sharrre.min.js" type="text/javascript"></script>
+
+    <!-- Slides JS -->
+    <script src="{{ ASSET_PATH }}/js/slides.min.js" type="text/javascript"></script>
+
+    <!-- Apprise -->
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/apprise/apprise-1.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/apprise.min.css" media="screen" />
+
+    <!-- oswald font CSS -->
+    <link href="{{ ASSET_PATH }}/css/stylesheet.css" rel="stylesheet">
+
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.fancybox.pack.js"></script>
+
+    <!-- own CSS -->
+    <link href="{{ ASSET_PATH }}/css/styles.css" rel="stylesheet">
+
+    <!-- own JS -->
+    <script src="{{ ASSET_PATH }}/js/scripts.js" type="text/javascript"></script>
+
+
+    <!--[if lt IE 9]>
+      <script src="{{ ASSET_PATH }}/js/html5.js"></script>
+    <![endif]-->
+
+    <!--[if IE]>
+      <link href="{{ ASSET_PATH }}/css/styles_ie.css" rel="stylesheet">
+    <![endif]-->
+
+    <!--
+          <link rel="alternate" type="application/rss+xml" title="RSS" href="http://wewantgames.de/site/rss/magazin" />
+    -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33758548-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>   
+    
   </head>
-
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-        </div>
+
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '444939098872666', // App ID
+          channelUrl : '//wewantgames.de/channel.html', // Channel File
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          xfbml      : true  // parse XFBML
+        });
+
+        // Additional initialization code here
+      };
+
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/de_DE/all.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    </script>
+    
+    <div id="header">
+      <div id="logo">
+        <a href="javascript: void(0)">
+          <img src="{{ ASSET_PATH }}/img/logo.png" alt="Spider.de Logo" />
+        </a>
       </div>
-    </div>
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span2">
-      <!--Sidebar content-->
-      坑爹呢这是
 
-    </div>
-    <div class="span10">
-      <!--Body content-->
-      <dl>
-      {{content}}
-    </dl>
-    </div>
+      <div id="social_icons">
+        <a href="https://plus.google.com/u/0/104703388596207966552/posts" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_gplus.jpg" title="WeWantGames auf google+" alt="Google+"/></a>
+        <a href="http://youtube.com/wwgmag" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_youtube.png" title="WeWantGames auf YouTube" alt="YouTube"/></a>
+        <a href="http://facebook.com/wewantgames" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_facebook.png" title="WeWantGames auf Facebook" alt="Facebook" /></a>
+        <a href="http://twitter.com/wewantgames" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_twitter.png" title="WeWantGames auf Twitter" alt="Twitter" /></a>
+      </div>
+
+      <div class="terminator"></div>
+
+      <div id="menu">
+        <div class="level1">
+      <a href="/"><span class="active">Magazin</span></a>
   </div>
+
+
+<div class="level1">
+      <a href="/infos"><span class="active">Infos</span></a>
+  </div>
+
+<div class="terminator"></div>      </div>
+    </div>
+    
+    <div id="root">
+              <h2 style="margin-bottom: 10px">Top artikel</h2>
+        <div id="featured">
+          <div id="slides">
+  <div class="slides_container">
+    
+      <div>
+        <a href="javascript:void(0)">
+          <img src="{{ ASSET_PATH }}/uploads/games/evoland_big_01.jpg" alt="Evoland - von 1D bis 3D" width="960" />
+        </a>
+        <a href="javascript:void(0)">
+          <div class="caption">
+            <h2>Evoland - von 1D bis 3D</h2>
+            <div>Das Genre von Evoland lässt sich nicht ganz genau definieren, aber ich würde mal sagen, dass es sich um ein Adventure handelt. Allerdings mit einem ganz besonderem Clou.</div>
+          </div>
+        </a>
+      </div>
+
+    
+      <div>
+        <a href="javascript:void(0)">
+          <img src="{{ ASSET_PATH }}/uploads/games/bioshock_infinite_big_01.jpg" alt="Test - Bioshock Infinite" width="960" />
+        </a>
+        <a href="javascript:void(0)">
+          <div class="caption">
+            <h2>Test - Bioshock Infinite</h2>
+            <div>Nach ein paar Stunden Bioshock Infinite wage ich mich nun an ein erstes Fazit. Außerdem gibt es zu dem Spiel jetzt auch ein Let's Play von mir. </div>
+          </div>
+        </a>
+      </div>
+
+      </div>
+
+  <a href="#" class="prev"><img src="{{ ASSET_PATH }}/img/slider_arrow_left.png" width="20" height="43" alt="Arrow Prev"></a>
+  <a href="#" class="next"><img src="{{ ASSET_PATH }}/img/slider_arrow_right.png" width="20" height="43" alt="Arrow Next"></a>
+</div>        </div>
+
+{{ content }}
+<!--                                                       
+
+
+
+
+
+================================================================================================
+
+
+
+
+
+
+
+-->              
+      
+<!--
+
+
+
+
+
+
+===================================================================================================
+
+
+
+
+
+
+
+-->
+      <div id="right">
+
+<!--        
+  <div  
+         style="margin-top:   0px;
+        margin-bottom:  0px;">
+    <div class="newsletter_submit_form btn-group">
+
+  <h3>Newsletter abonnieren</h3>
+
+  <div class="control-goup" id="cg_email">
+    <input type="text" id="email" name="email" placeholder="eMail Adresse" style="float: left;" />
+    <button type="button" class="btn" title="Senden" onclick="submitMail();"><i class="icon icon-envelope"></i></button>
+  </div>
+
 </div>
 
-<div class="container">
-  <p class="muted credit">
-    "contact me @"
-    <a href="http://weibo.com/zhoufanspider">spiderfan</a>
-  </p>
-</div>
-    {% include JB/analytics %}
 
+<script>
+  
+  $('#btn_mail').click(function(){
+    submitMail();
+  })
+
+  $('#email').keyup(function(event){
+    if(event.which == 13 && isEmail($('#email').val()))
+      submitMail();
+  });
+
+  function isEmail(email) 
+  {
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+  
+  function submitMail()
+  {
+    if(isEmail($('#email').val()))
+      $.post('http://wewantgames.de/subscribe', {'email': $('#email').val()}, function(response){
+        apprise(response)
+        $('#email').val('');
+        $('#cg_email').attr('class', 'control-group');
+      });
+    else
+    {
+      apprise('Bitch, please! Das ist doch keine eMail Adresse...');
+      $('#cg_email').attr('class', 'control-group error');
+    } 
+  }
+
+</script> --></div>
+
+
+  <div  
+         style="margin-top:   0px;
+        margin-bottom:  15px;">
+    <div class="latest_comments">
+
+  <h3>Letzte Kommentare</h3>
+
+            <div class="item">
+        <div class="article">
+          <a href="artikel/ingress_-_ein_augmented_reality_spiel_von_google">
+            Ingress - Ein Augmented Reality Spiel von Google          </a>
+        </div>
+        <div class="comment">
+          Ich sehe das mit dem Datenschutz nicht so eng wie&#8230;        </div>
+        <div class="infos">
+          Am 16.11.2012 11:41 von Markus        </div>
+      </div>
+
+          <div class="item">
+        <div class="article">
+          <a href="artikel/ingress_-_ein_augmented_reality_spiel_von_google">
+            Ingress - Ein Augmented Reality Spiel von Google          </a>
+        </div>
+        <div class="comment">
+          Ich bin schon echt gespannt. Kann mir denken, dass es&#8230;        </div>
+        <div class="infos">
+          Am 16.11.2012 11:25 von Carsten       </div>
+      </div>
+
+          <div class="item">
+        <div class="article">
+          <a href="artikel/ingress_-_ein_augmented_reality_spiel_von_google">
+            Ingress - Ein Augmented Reality Spiel von Google          </a>
+        </div>
+        <div class="comment">
+          Nice, habe mich auch mal angemeldet.
+
+Da ich in der&#8230;        </div>
+        <div class="infos">
+          Am 16.11.2012 10:59 von Markus Wiegand        </div>
+      </div>
+
+      
+</div>  </div>
+<!-- 
+  留着做名片吧
+--><!--
+        <h3>Newsticker</h3>
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'profile',
+          rpp: 6,
+          interval: 30000,
+          width: 280,
+          height: 300,
+          theme: {
+            shell: {
+              background: '#eeeeee',
+              color: '#333333'
+            },
+            tweets: {
+              background: '#eeeeee',
+              color: '#333333',
+              links: '#666666'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: false,
+            live: false,
+            behavior: 'all'
+          }
+        }).render().setUser('wewantgames').start();
+        </script>
+      </div>
+-->
+      <div id="footer">
+        <img src="{{ ASSET_PATH }}/img/logo.png" alt="WeWantGames" style="width: 150px; margin-bottom: 8px;" /><br />
+WeWantGames versteht sich als Privatprojekt rund um die Themen Computerspiele und Spielentwicklung. Gegründet im Jahr 2012 
+als Plattform, um spieleinteressierte Leser mit Neuigkeiten zu versorgen. Wir sind weder an Werbung, noch die Spieleindustrie
+gebunden und können es uns so erlauben, unabhängig und völlig subjektiv zu berichten. Leider natürlich nicht in dem Umfang, 
+wie etablierte Spielemagazine. <span style="font-style: italic; font-weight: bold;">Fuck it! We'll do it live!</span>
+<hr />
+
+<span class="span4">
+  <strong>Von und mit</strong><br />
+  <a href="http://weibo.com/spiderprofessor" target="_blank">Carsten</a> (fällt unter das LSR)<br />
+  <a href="http://weibo.com/spiderprofessor" target="_blank">Jan</a> (hockt grade in Spanien rum...)<br />
+</span>
+
+<span class="span4">
+  <strong>Gastbeiträge</strong><br />
+  Du hast Lust es auch mal zu probieren?
+  Wir sind immer auf der Suche nach ambitionierten 
+  Leuten, die gerne mal einen Gastbeitrag
+  schreiben möchten. Schreib uns einfach an.
+</span>
+
+<span class="span3" style="text-align: right; margin-left: 45px;">
+  <a href="hhttps://plus.google.com/u/0/104703388596207966552/posts" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_gplus.jpg" title="WeWantGames auf google+" alt="Google+"/></a>
+  &nbsp;
+  <a href="http://youtube.com/wwgmag" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_youtube.png" title="WeWantGames auf YouTube" alt="YouTube" /></a>
+  &nbsp;
+  <a href="http://facebook.com/wewantgames" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_facebook.png" title="WeWantGames auf Facebook" alt="Facebook" /></a>
+  &nbsp; &nbsp;
+  <a href="http://twitter.com/wewantgames" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_twitter.png" title="WeWantGames auf Twitter" alt="Twitter" /></a>
+  &nbsp; &nbsp;
+  <a href="http://wewantgames.de/site/rss/magazin" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_rss.png" title="RSS Feed abonnieren" alt="RSS" /></a>
+</span>     </div>
+    </div>
+
+    <div id="ie_warning" onclick="$(this).remove();">
+      <h3>Ein bekannter Fehler wurde entdeckt!</h3>
+      <p>
+        Tut uns leid!<br />
+        Offensichtlich benutzt du den Internet Explorer... Das ist schade.<br />
+        Du kannst dir ja einen echten Browser installieren, wenn du möchtest. <br />
+        Oder komm einfach nicht wieder.<br />
+        <br />
+        Danke!
+      </p>
+    </div>
+
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://wewantgames.de/piwik/" : "http://wewantgames.de/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://wewantgames.de/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->    
   </body>
 </html>
