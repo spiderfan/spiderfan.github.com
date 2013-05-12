@@ -8,186 +8,22 @@
          style="margin-top:   0px;
         margin-bottom:  0px;">
     <div class="teaser_container">
-  
+  {% for post in site.posts%}
     <div class="news_teaser" onclick="window.location.href='artikel/death_inc_ist_nicht_tot'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/games/death_inc_small_01.jpg" alt="Death Inc ist nicht tot" />
-        </div>
+              <div class="teaser_image"></div>
       
-              <h2>Death Inc ist nicht tot</h2>
+            <a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{post.title}}</h2></a>
         
-        <div class="teaser_text">
-          Trotz fehlgeschlagener Kickstarter-Kampagne wird Death Inc entwickelt. Eine Alphaversion kann man sich jetzt für $10 kaufen. Oder $5000, wenn man möchte.       </div>
+        <div class="teaser_text">{{post.description}}</div>
       
       <div class="infos">
                           <i class="icon icon-film" title="Inklusive Video"></i>
-                12.04.2013 14:39 - 
-        0 Kommentare
+              {{post.date}}
       </div>
     </div>
-
+{% endfor %}
   
-    <div class="news_teaser" onclick="window.location.href='artikel/perspective_-_strafft_eure_gehirne'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/games/perspective_small_01.jpg" alt="Perspective - strafft eure Gehirne" />
-        </div>
-      
-              <h2>Perspective - strafft eure Gehirne</h2>
-        
-        <div class="teaser_text">
-          Seit Portal sprießen Puzzle-Plattformer ja wie Pilze aus dem Boden. Immer mal wieder ist auch ein interessanter Hirnwindungsverknoter dabei. Antichamber zum Beispiel. Perspective ist auch so ein Ding, dass die Dimensionen auf den Kopf stellt.        </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                04.04.2013 21:53 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/yay_erster_trailer_zu_thief'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/games/thief_4_small_01.jpg" alt="Yay! Erster Trailer zu Thief" />
-        </div>
-      
-              <h2>Yay! Erster Trailer zu Thief</h2>
-        
-        <div class="teaser_text">
-          Lange hat es von den ersten geleakten Screenshots zum Trailer ja nicht gedauert. Und eigentlich wird auch nur bestätigt, was man schon sehen konnte. Aber trotzdem ist hier der Trailer.        </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                02.04.2013 09:37 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/erster_trailer_zu_broken_age'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/games/broken_age_small_01.jpg" alt="Erster Trailer zu Broken Age" />
-        </div>
-      
-              <h2>Erster Trailer zu Broken Age</h2>
-        
-        <div class="teaser_text">
-          Double Fine (ihr wisst schon, The Cave, Psychonauts) hat endlich einen ersten Trailer zum durch Kickstarter finanziertem Adventure 'Broken Age' rausgehauen. Vom eigentlichem Gameplay ist aber noch nichts zu sehen.       </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                28.03.2013 10:33 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/housing_in_wildstar'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/games/WildStar_small_01.jpg" alt="Housing in WildStar" />
-        </div>
-      
-              <h2>Housing in WildStar</h2>
-        
-        <div class="teaser_text">
-          Vor kurzem gab es ja einen Trailer zu WildStar, jetzt gibt es ein interessantes DevLog zum Thema Housing. Allen Anschein nach wird das eigene Heim in dem kommendem MMORPG ein integraler Bestandteil des Spiels.       </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                27.03.2013 14:58 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/17_minuten_gameplay_zu_battlefield_4'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/games/bf_4_small_01.jpg" alt="17 Minuten Gameplay zu Battlefield 4" />
-        </div>
-      
-              <h2>17 Minuten Gameplay zu Battlefield 4</h2>
-        
-        <div class="teaser_text">
-          Drüben bei GameStar gibt es seit grade eben ein Gameplay-Video zu Battlefield 4, das die ersten 17 Minuten der Kampagne zeigt. Meine Meinung dazu gibt es hier.       </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                27.03.2013 11:40 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/crytek_lsst_die_muskeln_spielen'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/images/cry_engine_3_small_01.jpg" alt="Crytek lässt die Muskeln spielen" />
-        </div>
-      
-              <h2>Crytek lässt die Muskeln spielen</h2>
-        
-        <div class="teaser_text">
-          Zur Zeit findet ja die GDC (Games Developer Conference) statt und natürlich werden wieder spektakuläre Trailer gezeigt. Ein erster ist jetzt auf Youtube aufgetaucht. Und zwar von der CryEngine 3.       </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                26.03.2013 10:24 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/lets_play'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/images/lets_play_small_01.jpg" alt="Let's Play" />
-        </div>
-      
-              <h2>Let's Play</h2>
-        
-        <div class="teaser_text">
-          Seit neuestem macht WeWantGames auch in Let's Plays. Immerhin renne ich hier ja jedem Trend hinterher. Wenn auch 5 Jahre zu spät. Macht nichts. Wir fangen mit einem LP zu StarDrive an.        </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                23.03.2013 11:21 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/neue_physx-effekte_knnten_nerven'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/images/apex_small_01.jpg" alt="Neue PhysX-Effekte könnten nerven" />
-        </div>
-      
-              <h2>Neue PhysX-Effekte könnten nerven</h2>
-        
-        <div class="teaser_text">
-          Ein neuartiger Partikeleffekt, der grade mal in zwei Ankündigungstrailern bzw. Techdemos aufgetaucht ist geht mir jetzt schon auf die Nüsse. Hoffentlich nicht zu lange...        </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                21.03.2013 10:39 - 
-        0 Kommentare
-      </div>
-    </div>
-
-  
-    <div class="news_teaser" onclick="window.location.href='artikel/wildstar_trailer_-_fetziges_mmorpg'">
-              <div class="teaser_image">
-          <img src="{{ ASSET_PATH }}de/uploads/games/WildStar_small_01.jpg" alt="WildStar Trailer - fetziges MMORPG" />
-        </div>
-      
-              <h2>WildStar Trailer - fetziges MMORPG</h2>
-        
-        <div class="teaser_text">
-          Donnerstag morgen und die Runde wird mit einem Trailer eröffnet. Diesmal von WildStar, einem MMORPG mit Comic-Look. Und wenn der Humor im Spiel dem im Trailer entspricht wird es ganz lustig.        </div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-                21.03.2013 10:23 - 
-        0 Kommentare
-      </div>
-    </div>
-
+    
   
   
     <div class="">
@@ -246,7 +82,7 @@
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   -->
     <hr class="featurette-divider">
-  <h3>博客列表</h3>
+  
       <div class="featurette">
         
 
