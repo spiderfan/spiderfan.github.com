@@ -298,6 +298,7 @@
 
   <h3>最近博客列表</h3>
 {% for post in site.posts limit:3 %}
+<div class="latest_comments">
             <div class="item">
         <div class="article">
           <a href="{{ BASE_PATH }}{{ post.url }}">
@@ -309,7 +310,7 @@
        
       </div>
 
-          
+       </div>   
 {% endfor %}
 
       
