@@ -246,11 +246,11 @@
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   -->
     <hr class="featurette-divider">
-
+  <h3>博客列表</h3>
       <div class="featurette">
         
 
-        <a href="{{ BASE_PATH }}{{ post.url }}"><img class="featurette-image pull-left" src="{{ ASSET_PATH }}Carousel/img/products/{{ post.category }}">
+        <a href="{{ BASE_PATH }}{{ post.url }}">
         <h2 class="featurette-heading">{{ post.title }} </a><!--<span class="muted">{{ post.date | date_to_string }}</span></h2>-->
         <p class="lead">{{ post.description }}</p>
       </div>
