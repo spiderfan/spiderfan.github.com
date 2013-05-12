@@ -10,13 +10,10 @@
     <div class="teaser_container">
   {% for post in site.posts%}
     <div class="news_teaser" onclick="window.location.href='{artikel/death_inc_ist_nicht_tot}'">
-                <a href="{{ BASE_PATH }}{{ post.url }}">{{post.title}}</a>
-        
-        <div class="teaser_text">{{post.description}}</div>
-      
-      <div class="infos">
-                          <i class="icon icon-film" title="Inklusive Video"></i>
-              {{post.date}}
+       <a href="{{ BASE_PATH }}{{ post.url }}">{{post.title}}</a>
+       <div class="teaser_text">{{post.description}}</div>
+        <div class="infos">
+                         {{post.date}}
       </div>
     </div>
 {% endfor %}
