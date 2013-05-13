@@ -1,60 +1,18 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-
-<div id="main">
-        
-  <div id="magazine_teaser" 
-         style="margin-top:   0px;
-        margin-bottom:  0px;">
+   
+  <div id="magazine_teaser" style="margin-top:   0px; margin-bottom:  0px;">
     <div class="teaser_container">
-  {% for post in site.posts%}
-    <div class="news_teaser" onclick="window.location.href='{artikel/death_inc_ist_nicht_tot}'">
-       <a href="{{ BASE_PATH }}{{ post.url }}">{{post.title}}</a>
-       <div class="teaser_text">{{post.description}}</div>
-        <div class="infos">
-                         {{post.date}}
+{% for post in site.posts%}
+      <div class="news_teaser" onclick="window.location.href='{{ BASE_PATH }}{{ post.url }}'">
+        <h4>{{post.title}}</h4>
+        <div class="teaser_text">{{post.description}}</div>
+        <div class="infos">{{ post.date | date_to_string }}</div>
       </div>
+{% endfor %}
     </div>
-{% endfor %}
-  
-    
-  
-  
+  </div>
 
-</div>  </div>
-
-      </div>
-    <!-- Three columns of text below the carousel -->
-<!--
-      <div class="row">
-{% for post in site.posts %}
-{% if post.category == "motor2.png"%}
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.description }}</p>
-          <p><a class="btn" href="{{ BASE_PATH }}{{ post.url }}">查看详情 &raquo;</a></p>
-        </div>
-{% endif %}
-{% if post.category == "dynamic_balancer.png" %}
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-           <h2>{{ post.title }}</h2>
-          <p>{{ post.description }}</p>
-          <p><a class="btn" href="{{ BASE_PATH }}{{ post.url }}">查看详情 &raquo;</a></p>
-        </div>
-{% endif %}
-{% if post.category == "permanent_magnet.png" %}
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.description }}</p>
-          <p><a class="btn" href="{{ BASE_PATH }}{{ post.url }}">查看详情 &raquo;</a></p>
-        </div>
-{% endif %}
-{% endfor %}
-      </div>
--->
 
 

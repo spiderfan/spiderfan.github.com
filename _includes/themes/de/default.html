@@ -66,7 +66,7 @@
      body {
       padding-bottom: 40px;
       color: #5a5a5a;
-      background-image: url(/assets/themes/de/img/pw_pattern.png)
+      background-image: url({{ ASSET_PATH }}/img/pw_pattern.png)
     }
    </style>
     <script type="text/javascript">
@@ -118,22 +118,20 @@
       </div>
 
       <div id="social_icons">
-        <a href="https://plus.google.com/u/0/104703388596207966552/posts" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_gplus.jpg" title="WeWantGames auf google+" alt="Google+"/></a>
-        <a href="http://youtube.com/wwgmag" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_youtube.png" title="WeWantGames auf YouTube" alt="YouTube"/></a>
-        <a href="http://facebook.com/wewantgames" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_facebook.png" title="WeWantGames auf Facebook" alt="Facebook" /></a>
-        <a href="http://twitter.com/wewantgames" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_twitter.png" title="WeWantGames auf Twitter" alt="Twitter" /></a>
+        <a href="http://weibo.com/zhoufanspider" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_gplus.jpg" title="WeWantGames auf google+" alt="Google+"/></a>
+        <a href="http://weibo.com/zhoufanspider" target="_blank"><img src="{{ ASSET_PATH }}/img/icon_facebook.png" title="WeWantGames auf Facebook" alt="Facebook" /></a>
       </div>
 
       <div class="terminator"></div>
 
       <div id="menu">
         <div class="level1">
-      <a href="/_includes/themes/de/page_fenleibowen.html"><span class="active">首页</span></a>
+      <a href="/"><span class="active">首页</span></a>
   </div>
 
 
 <div class="level1">
-      <a href="/"><span class="active">博客列表</span></a>
+      <a href="{{ HOME_PATH }}tags.html"><span class="active">博客列表</span></a>
   </div>
 <!--幻灯片从这里开始 -->
 <div class="terminator"></div>      </div>
@@ -188,7 +186,11 @@
   <a href="#" class="next"><img src="{{ ASSET_PATH }}/img/slider_arrow_right.png" width="20" height="43" alt="Arrow Next"></a>
 </div>        </div>
 
+
+<div id="main">   
 {{ content }}
+
+</div>
 <!--                                                       
 
 
