@@ -7,7 +7,7 @@
 {% for post in site.posts%}
       <div class="news_teaser" onclick="window.location.href='{{ BASE_PATH }}{{ post.url }}'">
         <h4>{{post.title}}</h4>
-        <div class="teaser_text">{{post.description}}<script type="text/javascript" charset="utf-8">
+        <div class="teaser_text">{{post.description}}</div><script type="text/javascript" charset="utf-8">
 (function(){
   var _w = 86 , _h = 16;
   var param = {
@@ -27,7 +27,7 @@
   }
   document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
 })()
-</script></div>
+</script>
         <div class="infos">{{ post.date | date_to_string }}</div><script type="text/javascript" charset="utf-8">
 
 </script>
