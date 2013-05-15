@@ -4,7 +4,16 @@
 
 <div class="row">
   <div class="span8">
-    {{ content }}
+<div id="magazine_teaser" style="margin-top:   0px; margin-bottom:  0px;">
+    <div class="teaser_container">
+
+      
+        <div class="teaser_text">{{content}}</div>
+
+
+
+
+
     <hr>
     <div class="pagination">
       <ul>
@@ -13,7 +22,7 @@
       {% else %}
         <li class="prev disabled"><a>&larr; 上一个</a></li>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ HOME_PATH }}">首页</a></li>
+        <li><a href="spiderfan.cn">首页</a></li>
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一个 &rarr;</a></li>
       {% else %}
