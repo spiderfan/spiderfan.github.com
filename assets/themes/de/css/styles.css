@@ -103,6 +103,7 @@ hr
 {
 	border-bottom: 1px dotted #333333;
 	text-align: left;
+	background-color: #F4F4F4
 }
 
 #header #menu a, #header #menu span
@@ -176,6 +177,7 @@ hr
 {
 	width: 665px;
 	float: left;
+	background-color: #F4F4F4
 }
 
 #right

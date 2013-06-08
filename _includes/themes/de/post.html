@@ -1,19 +1,15 @@
 <div class="page-header">
   <h1>{{ page.title }}</h1>
 </div>
-
-<div class="row">
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?uid=1367295272712138&move=0&amp;btn=r1.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<!-- UJian Button BEGIN -->
+  <script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide"></script>
+<!-- UJian Button END -->
+<div class="row" style="margin-left: 0px;">
   <div class="span8">
-<div id="magazine_teaser" style="margin-top:   0px; margin-bottom:  0px;">
-    <div class="teaser_container">
-
-      
-        <div class="teaser_text">{{content}}</div>
-
-
-
-
-
+    {{ content }}
     <hr>
     <div class="pagination">
       <ul>
@@ -22,12 +18,14 @@
       {% else %}
         <li class="prev disabled"><a>&larr; 上一个</a></li>
       {% endif %}
-        <li><a href="spiderfan.cn">首页</a></li>
+        <li><a href="{{ BASE_PATH }}{{ HOME_PATH }}">首页</a></li>
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一个 &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>下一个 &rarr;</a>
       {% endif %}
+      <!-- JiaThis Button BEGIN -->
+
       </ul>
     </div>
     <hr>

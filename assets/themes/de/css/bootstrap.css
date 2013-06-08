@@ -147,6 +147,7 @@ a:hover {
 .row {
   margin-left: -20px;
   *zoom: 1;
+  background-color: #F4F4F4
 }
 .row:before,
 .row:after {
