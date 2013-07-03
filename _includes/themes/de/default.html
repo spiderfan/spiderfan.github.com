@@ -136,7 +136,7 @@ body {background:url({{ ASSET_PATH }}/img/Abstract-Black-Dark-l.jpg) repeat scro
       <a href="{{ HOME_PATH }}tags.html"><span class="active">博客分类</span></a>
   </div>
 <!--幻灯片从这里开始 -->
-
+<!--
 <div class="terminator"></div>      </div>
     </div>
     
@@ -189,7 +189,7 @@ body {background:url({{ ASSET_PATH }}/img/Abstract-Black-Dark-l.jpg) repeat scro
   <a href="#" class="next"><img src="{{ ASSET_PATH }}/img/slider_arrow_right.png" width="20" height="43" alt="Arrow Next"></a>
 </div>        </div>
 
-
+-->
 <div id="main">   
 {{ content }}
 <!-- UY BEGIN -->
@@ -198,88 +198,19 @@ body {background:url({{ ASSET_PATH }}/img/Abstract-Black-Dark-l.jpg) repeat scro
 <!-- UY END -->
 
 </div>
-<!--                                                       
 
 
 
-
-
+<!--
 ================================================================================================
-
-
-
-
-
-
-
 -->              
       
 <!--
-
-
-
-
-
-
 ===================================================================================================
-
-
-
-
-
-
-
 -->
       <div id="right">
 
-<!--        
-  <div  
-         style="margin-top:   0px;
-        margin-bottom:  0px;">
-    <div class="newsletter_submit_form btn-group">
 
-  <h3>Newsletter abonnieren</h3>
-
-  <div class="control-goup" id="cg_email">
-    <input type="text" id="email" name="email" placeholder="eMail Adresse" style="float: left;" />
-    <button type="button" class="btn" title="Senden" onclick="submitMail();"><i class="icon icon-envelope"></i></button>
-  </div>
-
-</div>
-
-
-<script>
-  
-  $('#btn_mail').click(function(){
-    submitMail();
-  })
-
-  $('#email').keyup(function(event){
-    if(event.which == 13 && isEmail($('#email').val()))
-      submitMail();
-  });
-
-  function isEmail(email) 
-  {
-    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    return regex.test(email);
-  }
-  
-  function submitMail()
-  {
-    if(isEmail($('#email').val()))
-      $.post('http://wewantgames.de/subscribe', {'email': $('#email').val()}, function(response){
-        apprise(response)
-        $('#email').val('');
-        $('#cg_email').attr('class', 'control-group');
-      });
-    else
-    {
-      apprise('Bitch, please! Das ist doch keine eMail Adresse...');
-      $('#cg_email').attr('class', 'control-group error');
-    } 
-  }
--->
   <div  
          style="margin-top:   0px;
         margin-bottom:  15px;">
