@@ -5,17 +5,20 @@ header: Posts By Tag
 group: navigation
 ---
 {% include JB/setup %}
-标签导航：
-<ul class="tag_box inline">
-  {% assign tags_list = site.tags %}  
-  {% include JB/tags_list %}
-</ul>
-
+<div  style="background-color:#F4F4F4;">
+	<h2>标签导航：</h2>
+	<ul class="tag_box inline">
+	  {% assign tags_list = site.tags %}  
+	  {% include JB/tags_list %}
+	</ul>
+</div><br>
 
 {% for tag in site.tags %} 
+<div  style="background-color:#F4F4F4;">
   <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul>
     {% assign pages_list = tag[1] %}  
     {% include JB/pages_list %}
   </ul>
+</div><br>
 {% endfor %}
