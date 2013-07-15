@@ -24,17 +24,24 @@ tags: [产品]
 
 	接下来再看一下搭建好的blog的样子。
 
-	![blog真实图](/assets/themes/de/blog_pic/blog1.png)
+![blog真实图](/assets/themes/de/blog_pic/blog1.png)
+---------------------------------------------------
 
-	![blog真实图](/assets/themes/de/blog_pic/blog2.png)
 
-	![blog真实图](/assets/themes/de/blog_pic/blog3.png)
+![blog真实图](/assets/themes/de/blog_pic/blog2.png)
+---------------------------------------------------
 
-	![blog真实图](/assets/themes/de/blog_pic/blog4.png)
+![blog真实图](/assets/themes/de/blog_pic/blog3.png)
+---------------------------------------------------
 
-	![blog真实图](/assets/themes/de/blog_pic/blog5.png)
+![blog真实图](/assets/themes/de/blog_pic/blog4.png)
+---------------------------------------------------
 
-	![blog真实图](/assets/themes/de/blog_pic/blog6.png)
+![blog真实图](/assets/themes/de/blog_pic/blog5.png)
+---------------------------------------------------
+
+![blog真实图](/assets/themes/de/blog_pic/blog6.png)
+---------------------------------------------------
 
 	细数了一下blog的模块总共有9个之多，分别是blog头，图片展示区，博文列表区，微博展示区，MOTO区，推荐区，评论区，blog尾区。
 
