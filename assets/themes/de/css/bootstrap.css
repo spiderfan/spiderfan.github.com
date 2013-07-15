@@ -60,7 +60,8 @@ img {
   height: auto;
   border: 0;
   -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
+  vertical-align: center;
+  
 }
 button,
 input,
