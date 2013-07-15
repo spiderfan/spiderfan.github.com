@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "#011 blog设计之用户需求和产品需求"
-description: ""
+title: "#011blog设计之用户需求和产品需求"
+description: "搭建这个blog已经有2个月左右了，一直很想谈谈当初搭建这个博客的初衷以及设计等方面的问题。今天就借此机会记录一下自己的博客，也算是2个月纪念吧。"
 category: 
-tags: [产品] [需求]
+tags: [产品]
 ---
 {% include JB/setup %}
 
