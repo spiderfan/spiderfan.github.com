@@ -7,8 +7,8 @@ tags: [心情随笔]
 ---
 {% include JB/setup %}
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;暑假接近尾声，充实的暑假，做自己想做的事情，对想做的事情也有了新的感悟，我体会到从一无所知到有头有目到有自己的想法到和大牛们产生同感的这个过程，我也喜欢这个过程。进步，一点点，就是要这一点点，足以。
-spiderfan.cn不单单记录我对产品的一些认识，更是我热爱生活，感受生活的一个平台，分享生活的一点一滴，不为了写作而写作，不为了充实博客而写博客，一切都是源于内心最渴望的冲动。是时候记录一下自己从6月份到现在的生活了。
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;暑假接近尾声，充实的暑假，做自己想做的事情，对想做的事情也有了新的感悟，我体会到从一无所知到有头有目到有自己的想法到和大牛们产生同感的这个过程，我也喜欢这个过程。进步，一点点，就是要这一点点，足以。
+spiderfan.cn不单单记录我对产品的一些认识，更是我热爱生活，感受生活的一个平台，分享生活的一点一滴，不为了写作而写作，不为了充实博客而写博客，一切都是源于内心最渴望的冲动。是时候记录一下自己从6月份到现在的生活了。</p>
 
 <font color="#5CACEE">广州移动：我的处女面，期待期待期待着</font>
 
@@ -22,4 +22,4 @@ spiderfan.cn不单单记录我对产品的一些认识，更是我热爱生活�
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;想要买好看的便宜的衣服是我们一开始的宗旨，三个小姑娘的一拍即合，三次圆桌会议，一次融资，一次拍摄，N次brainstrom，多次意见分歧。感谢支持我们的朋友，给我们给力的宣传，感谢两个合伙人，希望我们的合作是下一个中国合伙人。</p>
 
-<font color="#EEA9B8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v这个暑假看了很多书，感慨很多，收获很多。每当我CD的时候，总有周围一群满满正能量的人给我加满，9月初是我们人生当中第一场恶战的打响，我们努力并期待着，坚持并憧憬着，未来的城市，未来的感情，未来的未来.TO DREAM,TO BUILD,TO FAIL,TO SUCCEED！TO U ALL， MY FRIEND ~@kprime @DXP @猪小瑾 @pink  @U ALL~</font>
+<p><font color="#EEA9B8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v这个暑假看了很多书，感慨很多，收获很多。每当我CD的时候，总有周围一群满满正能量的人给我加满，9月初是我们人生当中第一场恶战的打响，我们努力并期待着，坚持并憧憬着，未来的城市，未来的感情，未来的未来.TO DREAM,TO BUILD,TO FAIL,TO SUCCEED！TO U ALL， MY FRIEND ~@kprime @DXP @猪小瑾 @pink  @U ALL~</font></p>
