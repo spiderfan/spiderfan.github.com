@@ -22,7 +22,8 @@
        </ul>
     </div>
     <hr>
-      <h4>发布日期</h4>
+      <div class="span4">
+  <h4>发布日期</h4>
   <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
   {% unless page.tags == empty %}
     <ul class="tag_box">
@@ -31,9 +32,10 @@
   </ul>
   {% endunless %}  
   </div>
+  </div>
 
 
-  
+
 
 
 </div>
