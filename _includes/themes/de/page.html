@@ -6,8 +6,9 @@
   	   {% for post in site.posts%}
     <div class="teaser_container">
   <h4>{{post.title}}</h4>
-      <div class="thumbnail" style="background-color:#FFFFFF" onclick="window.location.href='{{ BASE_PATH }}{{ post.url }}'">
-      <div class="teaser_text">{{post.description}}</div>
+      <div class="news_teaser" onclick="window.location.href='{{ BASE_PATH }}{{ post.url }}'">
+      
+        <div class="teaser_text">{{post.description}}</div>
        
       </div>
 
