@@ -1,17 +1,19 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-   
+
   <div id="magazine_teaser" style="margin-top:   0px; margin-bottom:  0px;">
+  	   {% for post in site.posts%}
     <div class="teaser_container">
-{% for post in site.posts%}
+  <h4>{{post.title}}</h4>
       <div class="news_teaser" onclick="window.location.href='{{ BASE_PATH }}{{ post.url }}'">
-        <h4>{{post.title}}</h4>
+      
         <div class="teaser_text">{{post.description}}</div>
        
       </div>
-{% endfor %}
+
     </div>
+    {% endfor %}
   </div>
 
 
