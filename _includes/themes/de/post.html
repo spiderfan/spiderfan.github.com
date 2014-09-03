@@ -5,7 +5,10 @@
 
   <div class="span8">
   {{ content }}
-    <hr>
+    
+  </div>
+
+   <hr>
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -22,7 +25,7 @@
        </ul>
     </div>
     <hr>
-      <div class="span4">
+  <div class="span4">
   <h4>发布日期</h4>
   <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
   {% unless page.tags == empty %}
@@ -32,10 +35,6 @@
   </ul>
   {% endunless %}  
   </div>
-  </div>
-
-
-
 
 
 </div>
