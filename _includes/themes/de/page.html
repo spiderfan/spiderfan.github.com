@@ -4,7 +4,7 @@
 
   <div id="magazine_teaser" style="margin-top:   0px; margin-bottom:  0px;">
   	   {% for post in site.posts%}
-    <div class="teaser_container">
+    <div class="thumbnail" style="background-color:#FFFFFF;">
   <h3>{{post.title}}</h3>
       <div class="news_teaser" onclick="window.location.href='{{ BASE_PATH }}{{ post.url }}'">
       <div class="teaser_text">{{post.description}}</div>
