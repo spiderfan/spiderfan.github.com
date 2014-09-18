@@ -191,6 +191,24 @@ body {background:url({{ ASSET_PATH }}/img/main_back_ground.png) repeat scroll!im
 </div>
 
 <div id="right">
+
+<!--最近博客列表 -->
+  <div  style="margin-top:   0px;margin-bottom:  15px;">
+    <div class="latest_comments">
+      <h3><img src="{{ ASSET_PATH }}/img/latest.png"></h3>
+      {% for post in site.posts limit:5 %}
+      <div class="latest_comments">
+        <div class="item">
+          <div class="article">
+            <a href="{{ BASE_PATH }}{{ post.url }}">
+              {{ post.title }} </a>
+          </div>
+        </div>
+      </div>   
+      {% endfor %}
+    </div>
+  </div>
+  
   <div style="margin-top:0px;margin-bottom:15px;">
     <div class="latest_comments">
       <a href="http://weibo.com/zhoufanspider"><img src="{{ ASSET_PATH }}/img/weibo.png" ></a><br><br>
@@ -227,22 +245,7 @@ body {background:url({{ ASSET_PATH }}/img/main_back_ground.png) repeat scroll!im
     </div>
   </div>
 
-<!--最近博客列表 -->
-  <div  style="margin-top:   0px;margin-bottom:  15px;">
-    <div class="latest_comments">
-      <h3><img src="{{ ASSET_PATH }}/img/latest.png"></h3>
-      {% for post in site.posts limit:5 %}
-      <div class="latest_comments">
-        <div class="item">
-          <div class="article">
-            <a href="{{ BASE_PATH }}{{ post.url }}">
-              {{ post.title }} </a>
-          </div>
-        </div>
-      </div>   
-      {% endfor %}
-    </div>
-  </div>
+
 </div>
 
 <div id="footer">
