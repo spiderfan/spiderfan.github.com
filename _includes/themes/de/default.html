@@ -104,10 +104,9 @@ body {background:url({{ ASSET_PATH }}/img/main_back_ground.png) repeat scroll!im
     
     <div id="header">
       <div id="logo">
-        <a href="javascript: void(0)">
+       
           <img src="{{ ASSET_PATH }}/img/logo.png" alt="Spider‘s Logo" />
-
-        </a>
+     
       </div>
       <div class="terminator"></div>
       <div id="menu">
@@ -196,7 +195,7 @@ body {background:url({{ ASSET_PATH }}/img/main_back_ground.png) repeat scroll!im
   <div  style="margin-top:   0px;margin-bottom:  15px;">
     <div class="latest_comments">
       <h3><img src="{{ ASSET_PATH }}/img/latest.png"></h3>
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts limit:6 %}
       <div class="latest_comments">
         <div class="item">
           <div class="article">
